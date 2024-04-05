@@ -7,7 +7,7 @@ function LoginPage() {
       <main className='w-full h-screen bg-red-400 relative'>
         <LoginComponent />
         <div className='w-full h-[50%] bg-gray-200 2xl:p-48 p-20 py-20 2xl:py-36'>
-          <div className='w-[50%] flex flex-col gap-y-10'>
+          <div className='w-[40%] flex flex-col gap-y-10'>
             <h1 className='text-4xl 2xl:text-7xl font-black'>
               Bienvenido al <br />
               <span className='text-5xl 2xl:text-8xl'>

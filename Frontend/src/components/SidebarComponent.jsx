@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faTrash, faWarehouse, faFile, faClipboard, faUser, faAlignCenter, faPowerOff, faC, faEllipsisVertical, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faTrash, faWarehouse, faFile, faClipboard, faUsers, faAlignCenter, faChartSimple, faPowerOff, faC, faEllipsisVertical, faAngleRight, faCopy } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom"
 import ModalLogout from './configs/ModalLogout';
 
@@ -35,7 +35,7 @@ function SidebarComponent() {
 
           <ul className='border-t overflow-hidden border-b 2xl:mt-8 border-white border-opacity-50 py-5 border-b-white'>
             <li className='flex justify-start pl-1.5 items-center gap-x-4  text-white text-opacity-80 2xl:text-lg'>
-              <FontAwesomeIcon icon={faHouse} />Dashboard</li>
+              <FontAwesomeIcon icon={faChartSimple} />Dashboard</li>
           </ul>
 
           <ul className='border-b  border-b-white relative mt-20 2xl:mt-28 border-opacity-50 text-white text-opacity-80'>
@@ -57,11 +57,11 @@ function SidebarComponent() {
             </Link>
 
             <Link to="/usuarios">
-              <li className='hover:bg-white/80 hover:text-[#38A800] p-[8px] cursor-pointer h-10 2xl:h-11 flex items-center justify-start gap-x-4 2xl:text-lg transition ease-in-out duration-300 rounded-lg'><FontAwesomeIcon className='transition ease-in-out hover:-text-white hover:-translate-y-1 hover:scale-50 duration-300' icon={faUser} />Usuarios</li>
+              <li className='hover:bg-white/80 hover:text-[#38A800] p-[8px] cursor-pointer h-10 2xl:h-11 flex items-center justify-start gap-x-4 2xl:text-lg transition ease-in-out duration-300 rounded-lg'><FontAwesomeIcon className='transition ease-in-out hover:-text-white hover:-translate-y-1 hover:scale-50 duration-300' icon={faUsers} />Usuarios</li>
             </Link>
 
             <Link to="/elementos">
-              <li className='hover:bg-white/80 hover:text-[#38A800] p-[8px] cursor-pointer h-10 2xl:h-11 flex items-center justify-start gap-x-4 2xl:text-lg transition ease-in-out duration-300 rounded-lg'><FontAwesomeIcon className='transition ease-in-out hover:-text-white hover:-translate-y-1 hover:scale-50 duration-300' icon={faAlignCenter} />Elementos</li>
+              <li className='hover:bg-white/80 hover:text-[#38A800] p-[8px] cursor-pointer h-10 2xl:h-11 flex items-center justify-start gap-x-4 2xl:text-lg transition ease-in-out duration-300 rounded-lg'><FontAwesomeIcon className='transition ease-in-out hover:-text-white hover:-translate-y-1 hover:scale-50 duration-300' icon={faCopy} />Elementos</li>
             </Link>
 
             {/* <li className='hover:bg-white/80 hover:text-[#38A800] p-2 cursor-pointer h-10 2xl:h-11 flex items-center justify-start gap-x-4 2xl:text-lg'><FontAwesomeIcon icon={faTrash} />Residuos</li> */}
