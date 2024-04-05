@@ -185,7 +185,9 @@ function ActividadesPage() {
                   className="max-w-xs"
                   value={lugarActividad}
                   onChange={e => setLugarActividad(e.target.value)}
+                  
                 />
+                
               </div>
 
 
